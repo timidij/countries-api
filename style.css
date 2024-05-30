@@ -1,0 +1,29 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 95vw;
+}
+
+.country{
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100px; */
+    width: 100%;
+}
+
+.product{
+    margin: auto;
+    /* width: 700px; */
+}
+div{
+    width: 100px;
+    margin: 10px;
+}
+div>img{
+    width: 100%;
+}
