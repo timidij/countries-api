@@ -8,7 +8,11 @@
 body{
     width: 95vw;
 }
-
+.top{
+    display: flex;
+    justify-content: space-between;
+    width: 79vw;
+}
 .country{
     display: flex;
     flex-wrap: wrap;
