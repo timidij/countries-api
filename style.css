@@ -6,15 +6,29 @@
 :root{
     --VeryLightGray: hsl(0, 0%, 98%);
     --VeryDarkBlue: hsl(200, 15%, 8%);
+    --DarkBlue: hsl(209, 23%, 22%);
+    --White: hsl(0, 0%, 100%);
+    
+    --VeryDarkBlue: hsl(207, 26%, 17%);
 }
 @font-face {
     font-family: nunito;
     src: url(./NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
 }
+.nav{
+    display:flex ;
+    justify-content: space-between;
+    margin: 30px;
+}
+.fewdark{
+    background-color: var(--DarkBlue);
+}
 .few{
     width: 175px;
     margin: 20px;
-    background-color: var(--VeryLightGray);
+    background-color: var(--White);
+
+    /* background-color: var(--VeryLightGray); */
     
 }
 .fewdetails{
@@ -24,6 +38,7 @@
     flex-direction: column;
     line-height: 1.5rem;
     justify-content: space-between;
+
 }
 img{
     width: 100%;
@@ -41,13 +56,17 @@ img{
 }
 
 body{
-    /* background-color: var(--VeryLightGray); */
+    background-color: var(--VeryLightGray);
     display: flex;
     font-family: nunito;
-
+    font-size: 14px;
     color: var(--VeryDarkBlue);
     flex-direction: column; 
     
+}
+.dark{
+    background-color: var(--VeryDarkBlue);
+    color: var(--White);
 }
 .container{
     justify-content: center;
@@ -66,7 +85,7 @@ body{
 
 a{
     text-decoration: none;
-    color: black;
+    
 }
 @media (max-width:400px) {
     body{
@@ -92,7 +111,6 @@ a{
         align-items: center;
         align-self: center;
         width: 80%;
-        background-color: var(--VeryLightGray);
         justify-content: center;
     }
     .container{

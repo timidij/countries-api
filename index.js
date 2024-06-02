@@ -77,3 +77,12 @@ item.addEventListener("click", function(event) {
       window.location.href = `details.html?country=${clickedCountryName}`; // Load new page with encoded name
     }
   });
+
+
+
+  function handleCli(){
+    const el =document.querySelector("body")
+    
+    el.classList.toggle("dark")
+
+  }
