@@ -1,33 +1,103 @@
-
 *{
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
-
-body{
-    width: 95vw;
+:root{
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --VeryDarkBlue: hsl(200, 15%, 8%);
 }
+@font-face {
+    font-family: nunito;
+    src: url(./NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+.few{
+    width: 175px;
+    margin: 20px;
+    background-color: var(--VeryLightGray);
+    
+}
+.fewdetails{
+    padding: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    justify-content: space-between;
+}
+img{
+    width: 100%;
+}
+
 .top{
     display: flex;
     justify-content: space-between;
-    width: 79vw;
 }
-.country{
+.main{
     display: flex;
-    flex-wrap: wrap;
-    /* width: 100px; */
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.product{
-    margin: auto;
-    /* width: 700px; */
+body{
+    /* background-color: var(--VeryLightGray); */
+    display: flex;
+    font-family: nunito;
+
+    color: var(--VeryDarkBlue);
+    flex-direction: column; 
+    
 }
-div{
-    width: 100px;
-    margin: 10px;
+.container{
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+   /* background-color: var(--VeryLightGray); */
 }
-div>img{
-    width: 100%;
+    .items{
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-self: center; */
+        margin-top: 40px;
+        /* background-color: var(--VeryLightGray); */
+  
+    }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+@media (max-width:400px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .search{
+        margin: 10px;
+    }
+    .dropdown{
+        display: flex;
+        flex-direction: column;
+    }
+    .items{
+        display: flex;
+        align-items: center;
+        align-self: center;
+        width: 80%;
+        background-color: var(--VeryLightGray);
+        justify-content: center;
+    }
+    .container{
+        display: flex;
+    }
+
+
 }

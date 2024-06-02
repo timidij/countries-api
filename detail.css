@@ -1,0 +1,37 @@
+.details{
+    display: flex;
+}
+
+img{
+    width: 500px;
+}
+.text{
+    display: flex;
+    
+}
+.content{
+    padding: 40px;
+}
+.fw-bold{
+    font-weight: bold;
+}
+.border{
+    margin: 5px;
+}
+
+@media (max-width:400px) {
+    body{
+     display: flex;
+     flex-direction: column;
+     width: 90vw;
+    }
+    .details{
+        flex-direction: column;
+    }
+    .text{
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+    }
+}
