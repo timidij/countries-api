@@ -31,3 +31,24 @@ div{
 div>img{
     width: 100%;
 }
+
+.countrylist{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.eachdiv{
+    width: 200px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.borderCountry{
+    margin: 5px;
+    padding: 10px;
+}
