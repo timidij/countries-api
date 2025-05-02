@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Details will be displayed here</h1>
-<button class="backBtn">Back</button>
+<a href="" class="backBtn" ><button >Back</button> </a>
 
     <div class="countryDetail">
         
@@ -19,7 +19,9 @@
 <script>
     let backBtn = document.querySelector(".backBtn")
     backBtn.addEventListener("click", ()=>{
+        const location = document.referrer;
         
+        backBtn.href= location
          
     })
     let url = new URL(window.location.href)
@@ -40,7 +42,7 @@
                 let languages = ""
 
                 element.languages.forEach((val,i)=>{
-                    console.log("hello")
+                    // console.log("hello")
                     languages+= " " + val.name
                 })
 
@@ -49,8 +51,8 @@
                 let isBorders = element.borders
                 let borderDetail = ""
                 let boundary =[]
-                let free = element.borders
-                free.forEach((elem)=>{
+                let free = element?.borders
+                free?.forEach((elem)=>{
                     data.forEach((value)=>{
                         if(value.alpha3Code == elem){
                             boundary.push(value.name)
@@ -73,7 +75,7 @@
 
 
                 details.innerHTML = `<div>
-            <img src=${element.name} alt=${element.name} >
+            <img src=${element.flags.svg} alt=${element.name} >
             <h1>${element.name}</h1>
             <p>Native Name: ${element.nativeName}</p>
             <p>Population: ${element.population}</p>

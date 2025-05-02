@@ -29,9 +29,12 @@ div{
     margin: 10px;
 }
 div>img{
-    width: 100%;
+    width: 100px;
+    /* width: 100%; */
 }
-
+.image{
+    width: 140px;
+}
 .countrylist{
     display: flex;
     width: 100%;
